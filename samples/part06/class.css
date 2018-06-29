@@ -1,0 +1,14 @@
+.color {
+    background-color: Yellow;
+    color: Red;
+}
+
+.big {
+    font-size: 1.5em;
+}
+
+.frame{
+    border-style: inset;
+    border-color: Brown;
+    border-width: 10px;
+}
