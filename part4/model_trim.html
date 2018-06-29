@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<label for="message">メッセージ:</label>
+			<input type="text" id="message" v-model.trim.lazy="myName">
+		</form>
+		<div>こんにちは、{{ myName }}さん!</div>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./model_trim.js"></script>
+</body>
+</html>

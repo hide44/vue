@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<select v-model="language" multiple size="4">
+				<option value="">話せる言語は?</option>
+				<option>日本語</option>
+				<option>英語</option>
+				<option>ドイツ語</option>
+			</select>
+		</form>
+		<p>回答: {{ language }}</p>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./model_select.js"></script>
+</body>
+</html>

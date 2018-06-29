@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<label for="name">メールアドレス:</label><br>
+			<textarea :value="emails.join(';')"
+			@input="emails=$event.target.value.split(';')"></textarea>
+		</form>
+		<ul>
+			<li v-for="email in emails">
+				{{ email }}
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./model_custom.js"></script>
+</body>
+</html>
