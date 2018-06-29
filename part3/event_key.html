@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<label for="name">氏名:</label>
+			<input type="text" id="name" @keyup.delete="clear" v-model="name">
+		</form>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./event_key.js"></script>
+</body>
+</html>

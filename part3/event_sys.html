@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<form>
+			<label for="message">メッセージ:</label><br>
+			<textarea id="message" @keyup.alt.exact.72="help" v-model="message">
+			</textarea>
+		</form>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./event_sys.js"></script>
+</body>
+</html>
