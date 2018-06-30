@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>速習 Vue.js</title>
+</head>
+<body>
+  <div id="app">
+    <template v-for="a in articles">
+      <header>{{ a.title }}</header>
+      <div>{{ a.description }}</div>
+      <footer>{{ a.author }}</footer>
+    </template>
+  </div>
+  <script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+  <script src="./for_multi.js"></script>
+</body>
+</html>
