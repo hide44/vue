@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<my-hello>
+			<h3 slot="header">ようこそVue.js</h3>
+			<p>一緒にStudyしましょう</p>
+			<span slot="footer">wings project </span>
+			<p>questionは掲示板へ</p>
+			<a slot="footer" href="#">Q and A掲示板</a>
+		</my-hello>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./com_slot.js"></script>
+</body>
+</html>
