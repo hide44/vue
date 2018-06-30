@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>速習 Vue.js</title>
+</head>
+<body>
+	<div id="app">
+		<div class="big" :class="{color: true, frame: isChange}"></div>
+			{{message}}
+			<p v-cloak>{{ msg }}</p>
+		</div>
+	</div>
+
+	<script src="https://npmcdn.com/vue@2.5.16/dist/vue.min.js"></script>
+	<script src="./class.js"></script>
+</body>
+</html>
